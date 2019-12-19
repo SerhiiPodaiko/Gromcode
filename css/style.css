@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  min-width: 900px;
+}
+.wrap {
+  max-width: 50%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #2DFFA8;
+  animation: border 10s infinite;
+}
+@keyframes border {
+  20% {
+    border: 1px solid #2DFFA8;
+  }
+  40% {
+    border: 1px solid #50FF59;
+  }
+  60% {
+    border: 1px solid #D9FF41;
+  }
+  80% {
+    border: 1px solid #FF5F37;
+  }
+  100% {
+    border: 1px solid #AF0FFF;
+  }
+}
+.wrap .wrap-inner {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.wrap .wrap-inner .info .info__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .wrap-inner .info .info__name img {
+  display: block;
+  width: 148px;
+  max-width: 100%;
+  border-radius: 50%;
+  padding: 40px 0;
+  opacity: 0.8;
+  transition: 0.4s ease-in-out;
+}
+.wrap .wrap-inner .info .info__name img:hover {
+  opacity: 1;
+}
+.wrap .wrap-inner .info .info__name span {
+  font-size: 20px;
+  text-transform: uppercase;
+  animation: bg 10s infinite;
+}
+@keyframes bg {
+  20% {
+    color: #2DFFA8;
+  }
+  40% {
+    color: #50FF59;
+  }
+  60% {
+    color: #D9FF41;
+  }
+  80% {
+    color: #FF5F37;
+  }
+  100% {
+    color: #AF0FFF;
+  }
+}
+.wrap .wrap-inner .info .social-media {
+  margin: 45px 10%;
+}
+.wrap .wrap-inner .info .social-media .social-media__title {
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  background: #14a1ff;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.4s ease-in-out;
+  animation: bg 10s infinite;
+}
+@keyframes bg {
+  20% {
+    background: #2DFFA8;
+  }
+  40% {
+    background: #50FF59;
+  }
+  60% {
+    background: #D9FF41;
+  }
+  80% {
+    background: #FF5F37;
+  }
+  100% {
+    background: #AF0FFF;
+  }
+}
+.wrap .wrap-inner .info .social-media .social-media__title:hover {
+  border-radius: 8px;
+}
+.wrap .wrap-inner .info .social-media .social-media__subtitle p {
+  display: flex;
+  margin: 15px 0;
+}
+.wrap .wrap-inner .info .social-media .social-media__subtitle p span {
+  width: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+.wrap .wrap-inner .info .social-media .social-media__subtitle p a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+.wrap .wrap-inner .info .social-media .social-media__subtitle p a:hover {
+  color: #14a1ff;
+}
+.wrap .wrap-inner .info .lang {
+  margin: 0 10%;
+}
+.wrap .wrap-inner .info .lang .lang__title {
+  padding: 5%;
+  background: #14a1ff;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.4s ease-in-out;
+  animation: bg 10s infinite;
+}
+@keyframes bg {
+  20% {
+    background: #2DFFA8;
+  }
+  40% {
+    background: #50FF59;
+  }
+  60% {
+    background: #D9FF41;
+  }
+  80% {
+    background: #FF5F37;
+  }
+  100% {
+    background: #AF0FFF;
+  }
+}
+.wrap .wrap-inner .info .lang .lang__title:hover {
+  border-radius: 8px;
+}
+.wrap .wrap-inner .info .lang p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin: 15px 0;
+}
+.wrap .wrap-inner .profile {
+  background: #14a1ff;
+  animation: bg 10s infinite;
+}
+@keyframes bg {
+  20% {
+    background: #2DFFA8;
+  }
+  40% {
+    background: #50FF59;
+  }
+  60% {
+    background: #D9FF41;
+  }
+  80% {
+    background: #FF5F37;
+  }
+  100% {
+    background: #AF0FFF;
+  }
+}
+.wrap .wrap-inner .profile .skills {
+  margin: 10% 10% 10% 5%;
+}
+.wrap .wrap-inner .profile .skills .skills__title {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: width 0.4s ease-in-out;
+  width: 100%;
+}
+.wrap .wrap-inner .profile .skills .skills__title:hover {
+  width: 45%;
+  transition: 0.4s ease-in-out;
+}
+.wrap .wrap-inner .profile .skills .skills__info {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrap .wrap-inner .profile .education {
+  margin: 0 10% 10% 5%;
+}
+.wrap .wrap-inner .profile .education .education__title {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: width 0.4s ease-in-out;
+  width: 100%;
+}
+.wrap .wrap-inner .profile .education .education__title:hover {
+  width: 45%;
+  transition: 0.4s ease-in-out;
+}
+.wrap .wrap-inner .profile .education .education__info {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrap .wrap-inner .profile .education .education__info span {
+  display: block;
+  margin-top: 5px;
+}
+.wrap .wrap-inner .profile .education .education__info span:nth-child(4) {
+  margin-left: 25px;
+}
+.wrap .wrap-inner .profile .education .education__info span:nth-child(5) {
+  margin-left: 25px;
+}
+.wrap .wrap-inner .profile .profile {
+  margin: 0 10% 10% 5%;
+}
+.wrap .wrap-inner .profile .profile .profile__title {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: width 0.4s ease-in-out;
+  width: 100%;
+}
+.wrap .wrap-inner .profile .profile .profile__title:hover {
+  width: 45%;
+  transition: 0.4s ease-in-out;
+}
+.wrap .wrap-inner .profile .profile .profile__info {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrap .wrap-inner .profile .interests {
+  margin: 0 10% 10% 5%;
+}
+.wrap .wrap-inner .profile .interests .interests__title {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: width 0.4s ease-in-out;
+  width: 100%;
+}
+.wrap .wrap-inner .profile .interests .interests__title:hover {
+  width: 45%;
+  transition: 0.4s ease-in-out;
+}
+.wrap .wrap-inner .profile .interests .interests__info {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrap .wrap-inner .profile .interests .interests__info span {
+  padding-top: 15px;
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+  .profile .skills .skills__info span {
+    font-size: 14px;
+  }
+  .education .education__info span {
+    font-size: 14px;
+  }
+  .profile .profile__info span {
+    font-size: 14px;
+  }
+  .skills .skills__info span {
+    font-size: 14px;
+  }
+}
